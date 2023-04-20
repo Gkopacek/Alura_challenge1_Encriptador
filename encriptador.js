@@ -83,7 +83,7 @@ bEncriptar.addEventListener("click", function(event) {
   }
   let textEn = i.value;
   let valorSalida = encriptar(textEn);
-  Pcript.textContent = "el texto encriptado queda: " + valorSalida;
+  Pcript.textContent = valorSalida;
   
 
   
@@ -92,7 +92,7 @@ bEncriptar.addEventListener("click", function(event) {
 bDesEncriptar.addEventListener("click", function(event) {
   let textDes = i.value;
   let valorSalida = desEncriptar(textDes);
-  let Pdecript = document.getElementById("pDesencriptar")
-  Pcript.textContent= "el texto desencriptado queda: " + valorSalida;
+  /* let Pdecript = document.getElementById("pDesencriptar") */
+  Pcript.textContent= valorSalida;
   
 })
