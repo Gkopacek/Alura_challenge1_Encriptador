@@ -1,0 +1,116 @@
+<script>
+  function esVocal(letra){
+letraVocal = false;
+vocales = ['a','e','i','o','u']
+let vocal = ""
+for(let letras in vocales){
+    if(vocales[letras]==letra){
+        //vocal = letra;
+        letraVocal = true;
+        //document.write("esta letra " + vocal + " si es vocal")
+    }
+}
+return letraVocal;
+}
+
+function encriptar(text){
+let compuesto = "";
+for(let letras in text){
+    if(!esVocal(text[letras])){
+    let letra = text[letras];
+    compuesto = compuesto + letra;
+}else{
+    if(text[letras]=='a'){
+        compuesto = compuesto + "ai";
+    }
+    else if(text[letras]=='o'){
+        compuesto = compuesto + "ober"
+    }
+    else if(text[letras]=='e'){
+        compuesto = compuesto + "enter"
+    }
+
+    else if(text[letras]=='i'){
+        compuesto = compuesto + "imes"
+    }
+
+    else if(text[letras]=='u'){
+        compuesto = compuesto + "ufat"
+    }
+}
+
+}
+return compuesto;   
+
+}
+
+function desEncriptar(text){
+let frase= text.replace(/enter/igm,'e');
+frase = frase.replace(/ober/igm,'o');
+frase = frase.replace(/imes/igm,'i');
+frase = frase.replace(/ufat/igm,'u');
+frase = frase.replace(/ai/igm,'a');
+return frase;
+
+}
+//_________________
+let i = document.getElementById("texto");
+
+
+
+let bEncriptar = document.getElementById("buttonIzq")
+let bDesEncriptar = document.getElementById("bDesEncriptar");
+//let img = document.getElementById("munieco");
+
+
+bEncriptar.addEventListener("click", function(event) {
+//event.preventDefault();
+let imgContainer = document.getElementById("imgContainer");
+let textEn = i.value;
+//imgContainer.appendChild(img);
+//imgContainer.removeChild(img);
+let respuesta = document.createElement("p");
+imgContainer.appendChild(respuesta)
+if(imgContainer.contains(respuesta)){
+  
+  respuesta.style.position = "absolute";
+  respuesta.style.width = "336px";
+  respuesta.style.height = "781px";
+  respuesta.style.margin = "32px 32px 131px 32px"
+  respuesta.style.fontFamily = "Inter";
+  respuesta.style.fontSize = "24px";
+  let valorSalida = encriptar(textEn);
+  respuesta.textContent = "el texto encriptado queda: " + valorSalida;
+}else{
+  respuesta.innerHTML = "";
+  respuesta.textContent = "";
+  let valorSalida = encriptar(textEn);
+  respuesta.textContent = "aca entro dentro: " + valorSalida;
+}
+
+
+
+let Pcript = document.getElementById("mensajeP");
+Pcript.textContent = " ";
+
+//img.innerHTML =  "el texto encriptado queda: " + valorSalida;
+// imgContainer.removeChild(respuesta)
+// imgContainer.appendChild(img);
+
+
+
+}
+)
+
+/* bDesEncriptar.addEventListener("click", function(event) {
+//event.preventDefault();
+let textDes = iDesEncriptar.value;
+let valorSalida = desEncriptar(textDes);
+let Pdecript = document.getElementById("pDesencriptar")
+Pdecript.textContent= "el texto desencriptado queda: " + valorSalida;
+iDesEncriptar.value = "";
+
+}
+)*/
+
+</script>

@@ -1,0 +1,350 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
+body{
+    background-color: blueviolet;
+    margin: 0;
+    padding: 0;
+
+}
+main{
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    margin-top: 100px;
+    margin: auto;
+    background: #F3F5FC;
+
+
+}
+
+.logo{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 40px;
+    position: absolute;
+    width: 120px;
+    height: 48px;
+    left: 40px;
+    top: 40px;
+}
+
+.botonera{
+/* Frame 3 */
+
+
+/* Auto layout */
+
+display: flex;
+flex-direction: row;
+align-items: flex-start;
+padding: 0px;
+gap: 24px;
+
+position: absolute;
+width: 680px;
+height: 67px;
+left: 240px;
+top: 864px;
+
+}
+
+#buttonIzq{
+    /* Button */
+
+
+/* Auto layout */
+
+display: flex;
+flex-direction: row;
+align-items: flex-start;
+padding: 24px;
+gap: 8px;
+
+width: 328px;
+height: 67px;
+
+/* Dark blue/dark-blue-300 */
+
+background: #0A3871;
+border-radius: 24px;
+
+/* Inside auto layout */
+
+flex: none;
+order: 0;
+flex-grow: 0;
+
+/*formato de letra*/
+}
+
+#buttonIzq:hover{
+    background-color: #D8DFE8;
+    color: #0A3871;
+    cursor: pointer;
+}
+
+#buttonDer:hover{
+    background-color: #0A3871;
+    color: #D8DFE8;
+    cursor: pointer;
+}
+
+#buttonDer:active{
+    background-color: #0a274a;
+}
+
+#buttonIzq:active{
+    background-color: #838587;
+
+}
+
+#buttonDer{
+
+/* Auto layout */
+
+display: flex;
+flex-direction: row;
+align-items: flex-start;
+padding: 24px;
+gap: 8px;
+
+width: 328px;
+height: 67px;
+
+/* Light gray */
+
+background: #D8DFE8;
+/* Dark blue/dark-blue-300 */
+
+border: 1px solid #0A3871;
+border-radius: 24px;
+
+/* Inside auto layout */
+
+flex: none;
+order: 1;
+flex-grow: 0;
+
+/*formato de letra*/
+
+/* Button */
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 19px;
+text-align: center;
+
+/* Dark blue/dark-blue-300 */
+
+color: #0A3871;
+
+}
+
+#bCopiar{
+
+    /* Auto layout */
+    
+    
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 24px;
+    gap: 8px;
+    
+    width: 401px;
+    height: 67px;
+    
+    /* Light gray */
+    
+    background: #D8DFE8;
+    /* Dark blue/dark-blue-300 */
+    
+    border: 1px solid #0A3871;
+    border-radius: 24px;
+    
+    /* Inside auto layout */
+    
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+    
+    /*formato de letra*/
+    
+    /* Button */
+    
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    
+    /* Dark blue/dark-blue-300 */
+    
+    color: #0A3871;
+    
+    }
+
+    #bCopiar:hover{
+        background-color: #09ca22;
+        color: #D8DFE8;
+        cursor: pointer;
+    }
+
+
+.letra{
+    width: 280px;
+height: 19px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 19px;
+text-align: center;
+
+/* Dark blue/dark-blue-300 */
+
+
+
+/* Inside auto layout */
+
+flex: none;
+order: 0;
+flex-grow: 1;
+}
+
+.contenido{
+    /* Rectangle 1 */
+
+
+position: absolute;
+width: 400px;
+height: 891px;
+left: 1000px;
+top: 31px;
+
+/* White */
+
+background: #FFFFFF;
+/* shadow */
+
+box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
+border-radius: 32px;
+}
+
+#munieco{
+/* Muñeco */
+
+
+position:absolute;
+width: 336px;
+height: 304px;
+top: 283px;
+left: 32px;
+}
+
+#texto{
+    position: absolute;
+    width: 577px;
+    height: 48px;
+    left: 240px;
+    top: 168px;
+    
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 150%;
+
+    background-color: #F3F5FC;
+    border-color: #F3F5FC;
+    /* identical to box height, or 48px */
+    
+    
+    /* Dark blue/dark-blue-300 */
+    
+    color: #0A3871;
+}
+
+#mensaje{
+position: absolute;
+
+width: 336px;
+height: 58px;
+text-align: center;
+position:absolute;
+top: 600px;
+left: 32px;
+
+
+
+/* Gray/gray-500 */
+
+
+
+
+/* Inside auto layout */
+
+}
+
+#mensajeP{
+    text-align: center;
+font-family: 'Inter';
+font-style: normal;
+font-weight: 700;
+font-size: 24px;
+line-height: 120%;
+color: #343A40;
+}
+
+#textoAdicional{
+position: absolute;
+    
+width: 336px;
+height: 48px;
+
+top: 700px;
+left: 32px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 150%;
+/* or 24px */
+
+text-align: center;
+
+/* Gray/gray-400 */
+
+color: #495057;
+
+
+/* Inside auto layout */
+
+flex: none;
+order: 1;
+align-self: stretch;
+flex-grow: 0;
+}
+
+#encriptado{
+    width: 336px;
+    height: 661px;
+    margin:32px 32px 131px 32px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 150%;
+/* or 36px */
+
+
+/* Gray/gray-400 */
+
+color: #495057;
+}
